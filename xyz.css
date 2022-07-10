@@ -1,0 +1,127 @@
+/* -------------------------------------------------------
+Midterm Exam
+Written by: (Joseph Jananji 2195417)
+For "Front-End Web Programming" Section 05807– Winter 2022
+------------------------------------------------------- */
+header {
+    background-color: rgb(41, 121, 41);
+    color: white;
+    text-align: center;
+    font-size: xx-large;
+}
+/* containre to give the propertis */
+.wrapper {   
+   
+    padding-left: 200px;
+    width: 50%;
+    margin-left: 200px;
+
+}
+/* to make the nav on the left */
+nav {
+    float: left;
+    width: 8%;
+    padding: 10px;
+    background-image: linear-gradient(to bottom,white, rgb(117, 177, 117));
+    height: 900px;
+
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(65, 139, 65);
+    font-weight: bold;
+
+}
+
+h1,
+h2,
+h3,
+span {
+    color: rgb(107, 204, 107)
+}
+
+ul {
+    list-style-image: url(marker.gif);
+}
+
+footer {
+    text-align: center;
+    font-style: italic;
+}
+/* Top adjust the workshop page */
+.rr {
+    margin-left: 20px;
+    width: 25%;
+    border-right: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+
+.rr p {
+    color: rgb(42, 95, 42);
+}
+
+
+/* to make alternative color for table */
+table tr:nth-of-type(1) {
+    background-color: rgb(221, 238, 221);
+    /* border-style:solid; */
+
+    border-spacing: 0;
+    width: 100%;
+    border-color: rgb(199, 228, 199);
+}
+
+table, th,td {
+    border: solid;
+    border-color: rgb(131, 214, 131);
+    border-collapse: collapse;
+      margin-left: 0;
+      padding-left: 0;
+    margin-right: auto;
+
+    
+}
+table{
+    width: 100%;
+    
+    
+}
+/* To make the size of text */
+input[type="text"] {
+    width: 500px;
+    margin-left: 20px;
+}
+/* To make the size */
+input[type="email"] {
+    width: 500px;
+    margin-left: 45px;
+}
+/* To make the size */
+input[type="submit"] {
+    margin-left: 100px;
+}
+
+textarea {
+    width: 503px;
+    margin-left: 20px;
+}
+
+label {
+    float: left
+}
+div{background-color: white;
+    margin-left: 10%; padding-left: 5px;
+}
+/* change the color for links */
+a:focus {color:#d9ff00;}
+a:hover {color:#cc3a00;}
+a:active {color:#473abe;}
+
+
+
+
+
+

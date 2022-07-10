@@ -1,0 +1,148 @@
+<!-- -------------------------------------------------------
+Midterm Exam
+Written by: (Joseph Jananji 2195417)
+For "Front-End Web Programming" Section 05807– Winter 2022
+------------------------------------------------------- -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="xyz.css">
+    <title>XYZ Educators</title>
+
+    <script type="text/javascript">
+        function calculate() {
+            var open;
+            var fee;
+
+            if (document.getElementById("r1").checked)
+                fee = 295;
+            else if (document.getElementById("r2").checked)
+                fee = 295;
+            else if (document.getElementById("r3").checked)
+                fee = 395;
+            else if (document.getElementById("r4").checked)
+                fee = 395;
+            else
+                alert("You must select one");
+
+            if (document.getElementById("c1").checked)
+                open = 30;
+            else open = 0;
+
+            if (!isNaN(fee)) {
+                var x = fee + open;
+                document.getElementById("t2").value = "$" + x;
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <header>XYZ Educators</header>
+
+    <main>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="workshope.html">Workshope</a>
+            <a href="registration.html">Registration</a>
+        </nav>
+        <div id="wrapper">
+            <img src="header.jpg" alt="laptop" height="200" width=100%>
+            <h1>Workshops at XYZ..</h1>
+            <div class="rr" style="float:left">
+                <p><strong> Gentle Hatha Yoga</strong></p><br>Intended for beginners and anyone wishing a grounded
+                foundation in the practice of yoga, this 60
+                minute
+                class of poses and slow movement focuses on asana (proper alignment and posture), pranayama (breath
+                work), and guided meditation to foster your mind and body connection.
+            </div>
+            <div class="rr" style="float:left">
+                <p style><strong>Vinyasa Yoga</strong></p><br>Although designed for intermediate to advanced students,
+                beginners are welcome to sample this 60
+                minute
+                class that focuses on breath-synchronized movement — you will inhale and exhale as you flow
+                energetically through yoga poses.
+            </div>
+            <div class="rr" style="float:left">
+                <p><strong>Restorative Yoga</strong></p><br>This 90 minute class features very slow movement and long
+                poses that are supported by a chair or
+                wall.
+                This calming, restorative experience is suitable for students of any level of experience. This
+                practice
+                is can be a perfect way to help rehabilitate an injury.
+            </div>
+
+            <br><br><br><br><br><br><br><br><br><br><br><br>
+            <h3>Workshops</h3>
+            Loren ipsum Loren ipsum Loren ipsum Loren ipsum Loren ipsum Loren ipsum Loren ipsum Loren ipsum Loren ipsum
+            Loren ipsum Loren ipsum Loren ipsum Loren ipsum Loren ipsum Loren ipsum Loren ipsum Loren ipsum Loren ipsum
+            ...<br><br>
+
+            <fieldset>
+                <legend>Workshope</legend>
+                Select one:<br>
+                <form>
+                    <input type="radio" name="r1" id="r1" value="Accoutant">Introduction<br>
+
+                    <input type="radio" name="r1" id="r2">The Future<br>
+
+                    <input type="radio" name="r1" id="r3">Web<br>
+
+                    <input type="radio" name="r1" id="r4">Network<br>
+
+
+                </form>
+            </fieldset><br>
+            <input type="checkbox" name="c1" id="c1">Opening Night Dinner (&dollar; 30)
+            <br><br>
+
+
+            <input type="button" onclick="calculate()" name="s1" id="s1" value="Calculate"
+                style="margin-left:70px ;"><br><br>
+            <label for="t2">Total Fee:</label>
+            <input type="text" name="t2" id="t2"><br><br>
+
+            <table border="1">
+                <tr>
+                    <th style="text-align: center;">Workshop</th>
+                    <th style="text-align: center;">Fee</th>
+                </tr>
+                <tr>
+                    <td>Introduction</td>
+                    <td style="text-align: center;">&dollar;295</td>
+
+                </tr>
+                <tr>
+                    <td>The Future</td>
+                    <td style="text-align: center;">&dollar;295 </td>
+
+                </tr>
+                <tr>
+                    <td>Web</td>
+                    <td style="text-align: center;">&dollar;395 </td>
+
+                </tr>
+                <tr>
+                    <td>Network</td>
+                    <td style="text-align: center;">&dollar;395 </td>
+
+                </tr>
+            </table>
+
+            <br>
+
+            <footer>
+                Copyright &copy; 2022 XYZ Educators <br>
+                <a href="mailto:yourfirstname@yourlastname.com">yourfirstname@yourlastname.com</a>
+            </footer>
+        </div>
+</body>
+
+</html>
